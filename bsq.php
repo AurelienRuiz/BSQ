@@ -17,6 +17,7 @@ function open($file){
 
 function string_to_array($string){
   $array = explode("\n", $string);
+  array_pop($array);
   return $array;
 }
 
@@ -66,12 +67,13 @@ function response($tab, $result){
   foreach ($tab as $y => $line) {
     foreach ($line as $x => $value) {
       if ($result[1] <= $x && $x < $result[0]+$result[1] && $result[2] <= $y && $y < $result[0]+$result[2]){
-        echo "x ";
+        echo "x";
       }
       else{
-        echo $value." ";
+        echo $value;
       }
     }
+
     echo "\n";
   }
 }
