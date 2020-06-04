@@ -11,4 +11,4 @@ BSQ est un programme qui se charge de trouver le plus grand carré possible sur 
 - Executez ensuite `php bsq.php nom_du_fichier.txt`.
 
 ### Technologies
-PHP
+PHP, Algorithmie
